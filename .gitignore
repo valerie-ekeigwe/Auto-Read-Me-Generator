@@ -3,6 +3,7 @@
 
 # Ignore Python virtual environment
 venv/
+.venv/
 
 # macOS metadata
 .DS_Store

@@ -2,6 +2,16 @@
 
 {{ description }}
 
+## Table of Contents
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+{% if stars or forks or watchers or (language and language != "N/A") %}- [GitHub](#github){% endif %}
+- [Setup](#setup)
+{% if has_tests %}- [Tests](#tests){% endif %}
+
+## Overview
+{{ description }}
+
 ## Tech Stack
 {{ tech_stack }}
 
@@ -13,10 +23,7 @@
 {% if language and language != "N/A" %}- Primary language: {{ language }}{% endif %}
 {% endif %}
 
-{% if has_tests %}
-## Tests
-Tests are present in this repository.
-{% else %}
-## Tests
-No tests detected.
-{% endif %}
+## Setup
+1. Clone this repository:
+   ```bash
+   git clone <repo-url>
